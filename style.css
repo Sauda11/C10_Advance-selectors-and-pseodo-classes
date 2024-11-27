@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0D1117;
+    color: #C9D1D9;
+}
+
+h1 {
+    color: #58A6FF;
+}
+
+/* Attribute Selector */
+a {
+    color: #d66b23;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1F6FEB;
+}
+
+/* Child Selector */
+ul > li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+
+h1 + p {
+    background-color: #c5c8cb;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(255, 0, 153);
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: #4F8CC9;
+}
+
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: #76818f;
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+/* use window+dot(.)   for emoji  */
+ul li::before {
+    content: "🚀";
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: " 🌌";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color: #FF7B72;
+}
